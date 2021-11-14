@@ -22,7 +22,7 @@
     <meta name="description" content="shiro 是一个功能强大和易于使用的Java安全框架，为开发人员提供一个直观而全面的解决方案的认证，授权，加密，会话管理。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="shiro整合springboot">
-<meta property="og:url" content="http://example.com/2021/11/13/shiro%E6%95%B4%E5%90%88springboot/index.html">
+<meta property="og:url" content="https://ky11fe.gitee.io/blog/2021/11/13/shiro%E6%95%B4%E5%90%88springboot/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="shiro 是一个功能强大和易于使用的Java安全框架，为开发人员提供一个直观而全面的解决方案的认证，授权，加密，会话管理。">
 <meta property="og:locale" content="en_US">
@@ -41,7 +41,7 @@
 <meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3126293-21ab9dd14d5e858e.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="icon" href="/blog/assets/favicon.ico">
     
     <title>shiro整合springboot · ky2fe&#39;s Studio</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
@@ -156,7 +156,7 @@
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
-        src: url("/font/Oswald-Regular.ttf");
+        src: url("/blog/font/Oswald-Regular.ttf");
     }
 
     body {
@@ -204,15 +204,15 @@
     }
 </style>
 
-    <link rel="preload" href="/css/style.css?v=20210823" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="/css/dark.css?v=20210823" as="style">
-    <link rel="stylesheet" href="/css/dark.css" media="(prefers-color-scheme: dark)">
-    <link rel="stylesheet" href="/css/mobile.css?v=20210823" media="(max-width: 960px)">
+    <link rel="preload" href="/blog/css/style.css?v=20210823" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/blog/css/dark.css?v=20210823" as="style">
+    <link rel="stylesheet" href="/blog/css/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="/blog/css/mobile.css?v=20210823" media="(max-width: 960px)">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" as="script">
-    <link rel="preload" href="/scripts/main.js?v=20210823" as="script">
-    <link rel="preload" href="/scripts/dark.js?v=20210823" as="script">
-    <link rel="preload" href="/font/Oswald-Regular.ttf" as="font" crossorigin>
+    <link rel="preload" href="/blog/scripts/main.js?v=20210823" as="script">
+    <link rel="preload" href="/blog/scripts/dark.js?v=20210823" as="script">
+    <link rel="preload" href="/blog/font/Oswald-Regular.ttf" as="font" crossorigin>
     <link rel="preload" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" as="font" crossorigin>
     <!-- algolia -->
     
@@ -226,7 +226,7 @@
     <script type="text/javascript">
         if (typeof window.$ == undefined) {
             console.warn('jquery load from jsdelivr failed, will load local script')
-            document.write('<script src="/lib/jquery.min.js" />')
+            document.write('<script src="/blog/lib/jquery.min.js" />')
         }
     </script>
     
@@ -256,7 +256,7 @@
         </span>
         <!-- back to home page text -->
         <span class="home-link header-element">
-            <a href=/>ky2fe's Studio.</a>
+            <a href=/blog/>ky2fe's Studio.</a>
         </span>
     </div>
     <!-- toggle banner for post layout -->
@@ -265,7 +265,7 @@
             <div class="banner">
         
             <div class="blog-title header-element">
-                <a href="/">ky2fe&#39;s Studio.</a>
+                <a href="/blog/">ky2fe&#39;s Studio.</a>
             </div>
             <div class="post-title header-element">
                 <a href="#" class="post-name">shiro整合springboot</a>
@@ -308,7 +308,7 @@
     <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/blog/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
@@ -495,14 +495,14 @@
     [
       'https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js',
       'https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js',
-      "/lib/webfontloader.min.js",
+      "/blog/lib/webfontloader.min.js",
     ],
     asyncCb,
     asyncErr
   )
 </script>
 
-            <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+            <img class="loading" src="/blog/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
             <div class="container container-unloaded">
                 <main class="main post-page">
     <article class="article-entry">
@@ -650,10 +650,10 @@
     <!-- license -->
     
         <div class="license-wrapper">
-            <p>Author：<a href="http://example.com">ky2fe</a>
-            <p>Link：<a href="http://example.com/2021/11/13/shiro%E6%95%B4%E5%90%88springboot/">http://example.com/2021/11/13/shiro%E6%95%B4%E5%90%88springboot/</a>
-            <p>Publish date：<a href="http://example.com/2021/11/13/shiro%E6%95%B4%E5%90%88springboot/">November 13th 2021, 4:00:50 pm</a>
-            <p>Update date：<a href="http://example.com/2021/11/13/shiro%E6%95%B4%E5%90%88springboot/">November 13th 2021, 4:37:39 pm</a>
+            <p>Author：<a href="https://ky11fe.gitee.io/blog">ky2fe</a>
+            <p>Link：<a href="https://ky11fe.gitee.io/blog/2021/11/13/shiro%E6%95%B4%E5%90%88springboot/">https://ky11fe.gitee.io/blog/2021/11/13/shiro%E6%95%B4%E5%90%88springboot/</a>
+            <p>Publish date：<a href="https://ky11fe.gitee.io/blog/2021/11/13/shiro%E6%95%B4%E5%90%88springboot/">November 13th 2021, 4:00:50 pm</a>
+            <p>Update date：<a href="https://ky11fe.gitee.io/blog/2021/11/13/shiro%E6%95%B4%E5%90%88springboot/">November 13th 2021, 4:37:39 pm</a>
             <p>License：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -665,7 +665,7 @@
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2021/09/04/%E9%AB%98%E5%B9%B6%E5%8F%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" title="高并发解决方案">
+                <a href="/blog/2021/09/04/%E9%AB%98%E5%B9%B6%E5%8F%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" title="高并发解决方案">
                     <div class="prevTitle">高并发解决方案</div>
                 </a>
             
@@ -727,7 +727,7 @@
             
                 <span class="iconfont-archer wechat" title=wechat>
                     
-                    <img class="profile-qr" src="/assets/example_qr.png" />
+                    <img class="profile-qr" src="/blog/assets/example_qr.png" />
                 </span>
             
         
@@ -858,13 +858,13 @@
         
         <li class="archive-post-item">
             <span class="archive-post-date">11/13</span>
-            <a class="archive-post-title" href="/2021/11/13/shiro%E6%95%B4%E5%90%88springboot/">shiro整合springboot</a>
+            <a class="archive-post-title" href="/blog/2021/11/13/shiro%E6%95%B4%E5%90%88springboot/">shiro整合springboot</a>
         </li>
     
         
         <li class="archive-post-item">
             <span class="archive-post-date">09/04</span>
-            <a class="archive-post-title" href="/2021/09/04/%E9%AB%98%E5%B9%B6%E5%8F%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">高并发解决方案</a>
+            <a class="archive-post-title" href="/blog/2021/09/04/%E9%AB%98%E5%B9%B6%E5%8F%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">高并发解决方案</a>
         </li>
     
     </div>
@@ -940,16 +940,16 @@
         <!-- site-meta -->
         <script>
     var siteMeta = {
-        root: "/",
+        root: "/blog/",
         author: "ky2fe"
     }
 </script>
 
         <!-- import experimental options here -->
         <!-- main func -->
-        <script src="/scripts/main.js?v=20210823"></script>
+        <script src="/blog/scripts/main.js?v=20210823"></script>
         <!-- dark mode -->
-        <script src="/scripts/dark.js?v=20210823"></script>
+        <script src="/blog/scripts/dark.js?v=20210823"></script>
         <!-- fancybox -->
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
         <!-- algolia -->
@@ -962,7 +962,7 @@
         
         <!-- async load share.js -->
         
-            <script src="/scripts/share.js?v=20210823" async></script>
+            <script src="/blog/scripts/share.js?v=20210823" async></script>
         
         <!-- mermaid -->
         
